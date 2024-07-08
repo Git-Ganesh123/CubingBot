@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Scraping with PyScript</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.7.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.7.1/core.js"></script>
+</head>
+<body>
+    <button id="scrapeButton">Fetch 3x3 Statistics</button>
+    <pre id="output"></pre>
+
+    <!-- Load required packages -->
+    <py-env>
+        - beautifulsoup4
+        - requests
+    </py-env>
+
+    <!-- Define the Python script -->
+    <py-script src = "webScrape.py">
+    </py-script>
+</body>
+</html>
